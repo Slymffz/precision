@@ -522,11 +522,12 @@ verificar_key() {
 echo -e "${ROXO}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
 echo -e "${ROXO}     Vylari Systems | KeyHub${RESET}"
 echo -e "${ROXO}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
+echo -e "${ROXO}"
     tentativas=3
 
     while [ $tentativas -gt 0 ]
     do
-        echo -e "${CIANO}Digite a KEY:${RESET}"
+        echo -e "${CIANO}Digite a KEY: "
         read key
 
         if [ "$key" = "$KEY_CORRETA" ]; then
