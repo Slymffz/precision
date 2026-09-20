@@ -17,8 +17,8 @@ GREEN='\033[32m'
 YELLOW='\033[33m'
 BOLD='\033[1m'
 DIM='\033[2m'
-ROXO=$'\033[1;35m'
-RESET=$'\033[0m'
+ROXO='\033[1;35m'
+RESET='\033[0m'
 
 BUGREPORT_DIR="/data/user_de/0/com.android.shell/files/bugreports"
 
@@ -518,9 +518,9 @@ verificar_key() {
 
 echo -e "${ROXO}"
 echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "     Vylari Systems | KeyHub"
+echo "     Vylari Systems | KeyHub" 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo  -e "${RESET}"
+echo  -e "${ROXO}"
     tentativas=3
 
     while [ $tentativas -gt 0 ]
