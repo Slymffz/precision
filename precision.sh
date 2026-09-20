@@ -520,7 +520,6 @@ echo -e "${ROXO}"
 echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "     Vylari Systems | KeyHub" 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo  -e "${ROXO}"
     tentativas=3
 
     while [ $tentativas -gt 0 ]
@@ -531,12 +530,12 @@ echo  -e "${ROXO}"
         if [ "$key" = "$KEY_CORRETA" ]; then
             echo "$KEY_CORRETA" > "$ARQ_KEY"
             echo ""
-            echo "${VERDE}✔ KEY correta!${RESET}"
+            echo "${VERDE}✔ KEY correta!"
             sleep 1
             return
         else
             tentativas=$((tentativas - 1))
-            echo "${VERMELHO}❌ KEY inválida!${RESET}"
+            echo "${VERMELHO}❌ KEY inválida!"
             echo "Tentativas restantes: $tentativas"
             sleep 1
         fi
