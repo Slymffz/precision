@@ -520,12 +520,12 @@ echo -e "${ROXO}"
 echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "     Vylari Systems | KeyHub" 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo  -e "${ROXO}"
+echo  -e "${BOLD}"
     tentativas=3
 
     while [ $tentativas -gt 0 ]
     do
-        echo "${BOLD}" "Digite a KEY: "
+        echo "Digite a KEY: "
         read key
 
         if [ "$key" = "$KEY_CORRETA" ]; then
