@@ -19,7 +19,7 @@ BOLD='\033[1m'
 DIM='\033[2m'
 ROXO='\033[1;35m'
 RESET='\033[0m'
-CIANO=$'\033[1;36m'
+CIANO='\033[1;36m'
 
 BUGREPORT_DIR="/data/user_de/0/com.android.shell/files/bugreports"
 
@@ -509,7 +509,7 @@ verificar_key() {
         SALVA=$(cat "$ARQ_KEY")
 
         if [ "$SALVA" = "$KEY_CORRETA" ]; then
-            echo "${GREEN}" "✔ Acesso liberado"
+            echo "${GREEN}✔ Acesso liberado${RESET}"
             sleep 1
             return
         fi
@@ -522,7 +522,6 @@ verificar_key() {
 echo -e "${ROXO}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
 echo -e "${ROXO}     Vylari Systems | KeyHub${RESET}"
 echo -e "${ROXO}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
-echo -e "${ROXO}"
     tentativas=3
 
     while [ $tentativas -gt 0 ]
