@@ -534,13 +534,13 @@ echo -e "${ROXO}"
         if [ "$key" = "$KEY_CORRETA" ]; then
             echo "$KEY_CORRETA" > "$ARQ_KEY"
             echo ""
-            echo -e "${VERDE}✔ KEY correta!"
+            echo -e "${GREEN}✔ KEY correta!"
             echo -e "${RESET}"
             sleep 1
             return
         else
             tentativas=$((tentativas - 1))
-            echo -e "${VERMELHO}❌ KEY inválida!"
+            echo -e "${RED}❌ KEY inválida!"
             echo -e "${RESET}"
             echo "Tentativas restantes: $tentativas"
             sleep 1
