@@ -526,7 +526,7 @@ echo -e "${ROXO}"
 
     while [ $tentativas -gt 0 ]
     do
-        echo "Digite a KEY: "
+        echo -e "${YELLOW}Digite a KEY: "
         read key
 
         if [ "$key" = "$KEY_CORRETA" ]; then
