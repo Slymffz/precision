@@ -516,11 +516,11 @@ verificar_key() {
 
     clear
 
-echo  "${ROXO}"
+echo -e "${ROXO}"
 echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "     Vylari Systems | KeyHub"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo  "${RESET}"
+echo  -e "${RESET}"
     tentativas=3
 
     while [ $tentativas -gt 0 ]
@@ -565,4 +565,3 @@ while true; do
         *) echo "Opcao invalida." ; sleep 1 ;;
     esac
 done
-
