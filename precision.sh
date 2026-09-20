@@ -527,25 +527,28 @@ echo -e "${ROXO}"
 
     while [ $tentativas -gt 0 ]
     do
-        echo -e "${CIANO}Digite a KEY: ${RESET}"
+        echo -e "${CIANO}Digite a KEY: "
+        echo -e "${RESET}"
         read key
 
         if [ "$key" = "$KEY_CORRETA" ]; then
             echo "$KEY_CORRETA" > "$ARQ_KEY"
             echo ""
-            echo -e "${VERDE}✔ KEY correta!${RESET}"
+            echo -e "${VERDE}✔ KEY correta!"
+            echo -e "${RESET}"
             sleep 1
             return
         else
             tentativas=$((tentativas - 1))
-            echo -e "${VERMELHO}❌ KEY inválida!${RESET}"
+            echo -e "${VERMELHO}❌ KEY inválida!"
+            echo -e "${RESET}"
             echo "Tentativas restantes: $tentativas"
             sleep 1
         fi
     done
 
     echo ""
-    echo "⛔ SISTEMA BLOQUEADO"
+    echo "${RED}⛔ SISTEMA BLOQUEADO${RESET}"
     exit
 }
 
