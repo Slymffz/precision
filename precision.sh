@@ -521,22 +521,23 @@ verificar_key() {
 echo -e "${ROXO}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
 echo -e "${ROXO}     Vylari Systems | KeyHub${RESET}"
 echo -e "${ROXO}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
+echo -e "${ROXO}"
     tentativas=3
 
     while [ $tentativas -gt 0 ]
     do
-        echo "${YELLOW}Digite a KEY:${RESET} "
+        echo "Digite a KEY: "
         read key
 
         if [ "$key" = "$KEY_CORRETA" ]; then
             echo "$KEY_CORRETA" > "$ARQ_KEY"
             echo ""
-            echo "${VERDE}✔ KEY correta!${RESET}"
+            echo -e "${VERDE}✔ KEY correta!${RESET}"
             sleep 1
             return
         else
             tentativas=$((tentativas - 1))
-            echo "${VERMELHO}❌ KEY inválida!${RESET}"
+            echo -e "${VERMELHO}❌ KEY inválida!${RESET}"
             echo "Tentativas restantes: $tentativas"
             sleep 1
         fi
