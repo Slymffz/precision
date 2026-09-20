@@ -515,11 +515,12 @@ verificar_key() {
     fi
 
     clear
+    
 
-echo -e "${ROXO}"
-echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "     Vylari Systems | KeyHub$"{RESET}" 
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+echo -e "${ROXO}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
+echo -e "${ROXO}     Vylari Systems | KeyHub${RESET}"
+echo -e "${ROXO}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
     tentativas=3
 
     while [ $tentativas -gt 0 ]
