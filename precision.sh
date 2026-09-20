@@ -19,6 +19,7 @@ BOLD='\033[1m'
 DIM='\033[2m'
 ROXO='\033[1;35m'
 RESET='\033[0m'
+CIANO=$'\033[1;36m'
 
 BUGREPORT_DIR="/data/user_de/0/com.android.shell/files/bugreports"
 
@@ -526,7 +527,7 @@ echo -e "${ROXO}"
 
     while [ $tentativas -gt 0 ]
     do
-        echo -e "${YELLOW}Digite a KEY: "
+        echo -e "${CIANO}Digite a KEY:${RESET}"
         read key
 
         if [ "$key" = "$KEY_CORRETA" ]; then
