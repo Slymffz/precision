@@ -525,18 +525,18 @@ echo -e "${ROXO}━━━━━━━━━━━━━━━━━━━━━�
 
     while [ $tentativas -gt 0 ]
     do
-        echo "${BOLD}Digite a KEY: "
+        echo "${YELLOW}Digite a KEY:${RESET} "
         read key
 
         if [ "$key" = "$KEY_CORRETA" ]; then
             echo "$KEY_CORRETA" > "$ARQ_KEY"
             echo ""
-            echo "${VERDE}✔ KEY correta!"
+            echo "${VERDE}✔ KEY correta!${RESET}"
             sleep 1
             return
         else
             tentativas=$((tentativas - 1))
-            echo "${VERMELHO}❌ KEY inválida!"
+            echo "${VERMELHO}❌ KEY inválida!${RESET}"
             echo "Tentativas restantes: $tentativas"
             sleep 1
         fi
