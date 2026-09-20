@@ -508,7 +508,7 @@ verificar_key() {
         SALVA=$(cat "$ARQ_KEY")
 
         if [ "$SALVA" = "$KEY_CORRETA" ]; then
-            echo "✔ Acesso liberado"
+            echo "${GREEN}" "✔ Acesso liberado"
             sleep 1
             return
         fi
