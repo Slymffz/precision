@@ -524,7 +524,7 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 
     while [ $tentativas -gt 0 ]
     do
-        echo "Digite a KEY: "
+        echo "${BOLD}Digite a KEY: "
         read key
 
         if [ "$key" = "$KEY_CORRETA" ]; then
