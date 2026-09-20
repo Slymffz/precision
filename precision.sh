@@ -518,9 +518,8 @@ verificar_key() {
 
 echo -e "${ROXO}"
 echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "     Vylari Systems | KeyHub" 
+echo "     Vylari Systems | KeyHub$"{RESET}" 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "${RESET}"
     tentativas=3
 
     while [ $tentativas -gt 0 ]
